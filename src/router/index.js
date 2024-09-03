@@ -31,7 +31,17 @@ const routes = [
   {
     path: '/product',
     name: 'product',
-    component: () => import('@/views/ProductView.vue')
+    component: () => import('@/views/ProductView.vue'),
+    props: () => {
+      return{
+      titulo: 'Desayunos',
+      descripcion: 'Contamos con desayunos nutritivos, ricos y deliciosos',
+      precio: 3000,
+      cantidad: 'Para dos personas',
+      }
+      
+    },
+    
   }
 ]
 
